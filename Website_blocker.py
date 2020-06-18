@@ -5,7 +5,7 @@ hosts_path="C:/Windows/System32/drivers/etc/hosts"
 #Requires admin rights to run as it is a system32 folder being tampered with
 
 redirect="127.0.0.1"#Redirecting to local IP address
-
+#To block website write in this format ["websiteurl1","websiteurl2",...,"websiteurln"]
 website_list =["www.facebook.com","facebook.com","www.youtube.com",
                "youtube.com","www.manganelo.com","manganelo.com",
                "m.manganelo.com","www.manganelo.com","mangakakalot.com",
