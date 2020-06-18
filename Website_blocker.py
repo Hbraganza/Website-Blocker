@@ -1,34 +1,36 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import time
 from datetime import datetime as dt
 
 hosts_path="C:/Windows/System32/drivers/etc/hosts"
 #Requires admin rights to run as it is a system32 folder being tampered with
 
-redirect="127.0.0.1"#Redicting to local IP address
+redirect="127.0.0.1"#Redirecting to local IP address
 
 website_list =["www.facebook.com","facebook.com","www.youtube.com",
-               "youtube.com","www.manganelo.com","manganelo.com","m.manganelo.com","www.manganelo.com",
-               "mangakakalot.com","www.netflix.com","netflix.com"] 
-d = 24*60*60
+               "youtube.com","www.manganelo.com","manganelo.com",
+               "m.manganelo.com","www.manganelo.com","mangakakalot.com",
+               "www.netflix.com","netflix.com"] 
+d =24*60*60
 h =60*60
 
-Sleeptime= 23#adjustable times to blockwebsites
-wakeuptime= 6
+#adjustable times [hours,minutes,seconds,microseconds]
+Sleeptime=[23,0,0,0]#when the blocker switches on
+wakeuptime=[6,0,0,0]#when the blocker switches off
 
 while True:
 
     T=dt.now()#Taking current time
     WD=T.weekday()#Taking the weekday as a value from 0-6 where 0 = monday and 6 = sunday
-    upb=T.replace(hour=Sleeptime,minute=0,second=0,microsecond=0)#replacting current time but keeping current date
-    lpb=upb.replace(hour=wakeuptime)
-    supb=upb.replace(hour=Sleeptime-1)
-    slpb=lpb.replace(hour=wakeuptime-1)
+    upb=T.replace(hour=int(Sleeptime[0]),
+                  minute=int(Sleeptime[1]),
+                  second=int(Sleeptime[2]),
+                  microsecond=int(Sleeptime[3]))#replacting current time but keeping current date
+    lpb=upb.replace(hour=int(wakeuptime[0]),
+                    minute=int(wakeuptime[1]),
+                    second=int(wakeuptime[2]),
+                    microsecond=int(wakeuptime[3]))
+    supb=upb.replace(hour=int(Sleeptime[0])-1)
+    slpb=lpb.replace(hour=int(wakeuptime[0])-1)
     t=T.time
     
     if (upb<T or T<lpb) and (0<=WD<=3 or WD==6 or(WD==4 and T<lpb))and not(T<lpb and WD==6):
