@@ -9,7 +9,7 @@ To find 'hosts' location follow this file path for Windows "C:/Windows/System32/
 **<h2>ATTENTION</h2>
 Microsoft does not recommend editing any files in 'System32' therefore use of this program is at your own risk and anything that happens is your responsibility, and therefore by using this code you are agreeing that you are solely liable if it damages anything.**
 
-This is a python script that at set times will redirect set websites to your local IP giving a form resubmission error effectively blocking that website. These set time are 11pm to 6am and for Sunday night to Friday morning. It will block Facebook, Youtube, Manganelo, Mangakaklot and Netflix.
+This is a python script that at set times will redirect set websites to your local IP giving a form resubmission error effectively blocking that website. These set time are 11pm to 6am and for Sunday night to Friday morning. It will block Facebook, Youtube and Netflix.
 
 While the days it activates are mor difficult to adjust the time and website list can be adjusted easily when editing the program. To adjust the time the websiteblocker is implace change the "Sleeptime" and "wakeuptime" numbers depending on when you want the blocker to activate. Make sure the time is setup as shown in the comment in the program if you are not using a value set it to 0 otherwise the program will not work.
 
