@@ -7,7 +7,7 @@ A website blocker that activates at certain hours that can be adjusted for diffe
 To find 'hosts' location follow this file path for Windows "C:/Windows/System32/drivers/etc/hosts". If you are not using windows please look up the file location.**
 
 **<h2>ATTENTION</h2>
-Microsoft does not recommend editing any files in 'System32' therefore use of this program is at your own risk and anything that happens is not my fault.**
+Microsoft does not recommend editing any files in 'System32' therefore use of this program is at your own risk and anything that happens is your responsibility, and therefore by using this code you are agreeing that you are solely liable if it damages anything.**
 
 This is a python script that at set times will redirect set websites to your local IP giving a form resubmission error effectively blocking that website. These set time are 11pm to 6am and for Sunday night to Friday morning. It will block Facebook, Youtube, Manganelo, Mangakaklot and Netflix.
 
