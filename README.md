@@ -17,7 +17,7 @@ Sleeptime = [hours, minutes, seconds, microseconds]
 ```
  &
 ```
-wake-up time = [hours, minutes, seconds, microseconds]
+wakeuptime = [hours, minutes, seconds, microseconds]
 ```
 Make sure the time is set up as shown in the program comment. If you are not using a value, set it to 0; otherwise, the program will not work.
 
