@@ -7,8 +7,7 @@ hosts_path="C:/Windows/System32/drivers/etc/hosts"
 redirect="127.0.0.1"#Redirecting to local IP address
 #To block website write in this format ["websiteurl1","websiteurl2",...,"websiteurln"]
 website_list =["www.facebook.com","facebook.com","www.youtube.com",
-               "youtube.com","www.manganelo.com","manganelo.com",
-               "m.manganelo.com","www.manganelo.com","mangakakalot.com",
+               "youtube.com",
                "www.netflix.com","netflix.com"] 
 d =24*60*60
 h =60*60
